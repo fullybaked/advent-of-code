@@ -2,6 +2,7 @@ import click
 
 import src.day1
 import src.day2
+import src.day3
 
 
 def load_data(day):
@@ -16,6 +17,8 @@ def days(day):
         src.day1.main(raw_data)
     elif day == "2":
         src.day2.main(raw_data)
+    elif day == "3":
+        src.day3.main(raw_data)
 
 
 if __name__ == "__main__":
