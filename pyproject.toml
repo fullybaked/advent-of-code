@@ -5,7 +5,7 @@ description = ""
 authors = ["fullybaked <david@fullybaked.co.uk>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
