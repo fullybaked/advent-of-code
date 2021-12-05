@@ -1,12 +1,16 @@
 import click
+from os.path import exists
 
 import src.day1
 import src.day2
 import src.day3
+import src.day4
 
 
 def load_data(day):
-    return open(f"data/day{day}.txt").read().splitlines()
+    data_file = f"data/day{day}.txt"
+    if exists(data_file):
+        return open(data_file).read().splitlines()
 
 
 @click.command()
@@ -19,6 +23,8 @@ def days(day):
         src.day2.main(raw_data)
     elif day == "3":
         src.day3.main(raw_data)
+    elif day == "4":
+        src.day4.main()
 
 
 if __name__ == "__main__":
